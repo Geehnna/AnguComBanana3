@@ -1,0 +1,39 @@
+<!-- home.ejs -->
+
+<!-- Texto -->
+<section>
+    <h2>Mensagem</h2>
+    <p><%= texto %></p>
+</section>
+<section>
+    <h2>Mensagem</h2>
+    <p><%= texto %></p>
+</section>
+<section>
+    <h2>Mensagem</h2>
+    <p><%= texto %></p>
+</section>
+
+<!-- Imagens -->
+<section>
+    <h2>Imagens</h2>
+    <div style="display:flex; gap:20px;">
+        <% for(let i=0; i<imagens.length; i++) { %>
+            <img src="<%= imagens[i] %>" alt="Imagem <%= i+1 %>" width="200">
+        <% } %>
+    </div>
+</section>
+
+<!-- Pessoas -->
+<section>
+    <h2>Pessoas</h2>
+    <ul>
+        <% for(var i=0; i<pessoas.length; i++) { %>
+            <li>
+                Nome: <%= pessoas[i].nome %> <br>
+                Idade: <%= pessoas[i].idade %>
+            </li>
+        <% } %>
+    </ul>
+</section>
+
